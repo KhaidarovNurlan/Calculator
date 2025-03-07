@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Калькулятор</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url('https://images.pexels.com/photos/164005/pexels-photo-164005.jpeg?cs=srgb&dl=pexels-fwstudio-33348-164005.jpg&fm=jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .calc {
+            background-color: black;
+            height: 640px;
+            width: 360px;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .answer {
+            height: 171px;
+            width: 352px;
+            margin-left: 4px;
+            position: relative;
+        }
+        .answer > p {
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 75px;
+            position: absolute;
+            bottom: -80px;
+            right: 8px;
+        }
+        .btns {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+            margin-left: 4px;
+        }
+        .calc > div > div > a {
+            text-decoration: none;
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .calc > div > div {
+            display: grid;
+            place-items: center;
+        }
+        .num {
+            border-radius: 50%;
+            background-color: #2a2a2c;
+            height: 85px;
+            width: 85px;
+        }
+        .num a {
+            font-size: 40px;
+        }
+        .zero {
+            border-radius: 50px;
+            background-color: #2a2a2c;
+            height: 85px;
+            width: 174px;
+        }
+        .zero a {
+            font-size: 40px;
+        }
+        .op {
+            border-radius: 50%;
+            background-color: #ff9f0a;
+            height: 85px;
+            width: 85px;
+        }
+        .op a {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        .equal {
+            border-radius: 50px;
+            background-color: #ff9f0a;
+            height: 85px;
+            width: 174px;
+        }
+        .equal a {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        .erase {
+            border-radius: 50px;
+            background-color: #5c5c5f;
+            height: 85px;
+            width: 85px;
+        }
+        .erase a {
+            font-size: 30px;
+        }
+    </style>
+    <body>
+        <div class="calc">
+            <div class="answer">
+                <p>0</p>
+            </div>
+            <div class="btns">
+                <div class="num">
+                    <a href="#">7</a>
+                </div>
+                <div class="num">
+                    <a href="#">8</a>
+                </div>
+                <div class="num">
+                    <a href="#">9</a>
+                </div>
+                <div class="op">
+                    <a href="#">÷</a>
+                </div>
+            </div>
+            <div class="btns">
+                <div class="num">
+                    <a href="#">4</a>
+                </div>
+                <div class="num">
+                    <a href="#">5</a>
+                </div>
+                <div class="num">
+                    <a href="#">6</a>
+                </div>
+                <div class="op">
+                    <a href="#">×</a>
+                </div>
+            </div>
+            <div class="btns">
+                <div class="num">
+                    <a href="#">1</a>
+                </div>
+                <div class="num">
+                    <a href="#">2</a>
+                </div>
+                <div class="num">
+                    <a href="#">3</a>
+                </div>
+                <div class="op">
+                    <a href="#">−</a>
+                </div>
+            </div>
+            <div class="btns">
+                <div class="zero">
+                    <a href="#">0</a>
+                </div>
+                <div class="num">
+                    <a href="#">.</a>
+                </div>
+                <div class="op">
+                    <a href="#">+</a>
+                </div>
+            </div>
+            <div class="btns">
+                <div class="erase">
+                    <a href="#">AC</a>
+                </div>
+                <div class="erase">
+                    <a href="#">⌫</a>
+                </div>
+                <div class="equal">
+                    <a href="#">=</a>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
